@@ -31,6 +31,13 @@ assessmentButton.addEventListener(
     paragraph.innerText = result;
     bodyDivision.appendChild(paragraph);
 
+    //rusultDivision に Bootstrap のスタイルを適応する
+    resultDivision.setAttribute('class', 'card');
+
+    //headerDivision と bodyDivision を resultDivision に差し込む
+    resultDivision.appendChild(headerDivision);
+    resultDivision.appendChild(headerDivision);
+
     // ツイートエリアの作成
     tweetDivision.innerText ='';
     const anchor = document.createElement('a');
